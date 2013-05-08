@@ -10,7 +10,9 @@
             
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Menu Grid.Row="0">
             <MenuItem Header="_Datei">
@@ -25,5 +27,6 @@
             <MenuItem Header="_Bearbeiten"></MenuItem>
             <MenuItem Header="_Hilfe"></MenuItem>
         </Menu>
+        
     </Grid>
 </Window>
