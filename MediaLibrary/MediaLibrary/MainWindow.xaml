@@ -5,28 +5,52 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="*"/>
             
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Menu Grid.Row="0">
-            <MenuItem Header="_Datei">
-                <MenuItem Header="_Neu" />
-                <MenuItem Header="_Öffnen" />
-                <Separator />
-                <MenuItem Header="_Speichern" />
-                <MenuItem Header="Speichern _unter..." />
-                <Separator />
-                <MenuItem Header="_Beenden" />
-            </MenuItem>
-            <MenuItem Header="_Bearbeiten"></MenuItem>
-            <MenuItem Header="_Hilfe"></MenuItem>
-        </Menu>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="120"/>
+            </Grid.ColumnDefinitions>
+            <Menu Grid.Column="0">
+                <MenuItem Header="_Datei">
+                    <MenuItem Header="_Neu" />
+                    <MenuItem Header="_Öffnen" />
+                    <Separator />
+                    <MenuItem Header="_Speichern" />
+                    <MenuItem Header="Speichern _unter..." />
+                    <Separator />
+                    <MenuItem Header="_Beenden" />
+                </MenuItem>
+                <MenuItem Header="_Bearbeiten"></MenuItem>
+                <MenuItem Header="_Hilfe">
+                    <MenuItem Header="Hilfe anzeigen..." />
+                    <MenuItem Header="Über..." />
+                </MenuItem>
+            </Menu>
+            <TextBox Grid.Column="1" Text="Suchen..." TextAlignment="Right" />
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition />
+                <ColumnDefinition Width="120"/>
+            </Grid.ColumnDefinitions>
+            <TreeView Grid.Column="0">
+                <TreeViewItem Header="Audio">
+                    <TreeViewItem Header="Musik" />
+                    <TreeViewItem Header="Hörbücher" />
+                </TreeViewItem>
+                <TreeViewItem Header="Video">
+                    <TreeViewItem Header="Filme" />
+                    <TreeViewItem Header="Serien" />
+                </TreeViewItem>
+            </TreeView>
+            <ListView Grid.Column="1">
+                
+            </ListView>
+        </Grid>
         
     </Grid>
 </Window>
