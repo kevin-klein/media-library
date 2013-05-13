@@ -1,6 +1,6 @@
 #pragma once
 #include "using.h"
-#include "Menu_Main.h"
+#include "Menu/Menu_Main.h"
 
 ref class MainWindow : public Window
 {
@@ -16,7 +16,7 @@ public:
 	RowDefinition ^rd2_main;
 	RowDefinition ^rd3_main;
 
-	Menu ^men;
+	Menu_Main ^men;
 	
 };
 

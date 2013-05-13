@@ -4,6 +4,6 @@
 ref class App : Application
 {
 public:
-	App(void);
+	App(void){}
 };
 
