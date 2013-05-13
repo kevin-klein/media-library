@@ -49,6 +49,10 @@
                     <TreeViewItem Header="Filme" />
                     <TreeViewItem Header="Serien" />
                 </TreeViewItem>
+                <TreeViewItem Header="Programme">
+                        <TreeViewItem Header="Installiert" />
+                        <TreeviewItem Header="Installationsmedien" />
+                </TreeViewItem>
             </TreeView>
             <ListView Grid.Column="1">
                 <ListView.View>
