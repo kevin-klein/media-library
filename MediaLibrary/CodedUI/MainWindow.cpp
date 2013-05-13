@@ -17,7 +17,7 @@ MainWindow::MainWindow(void)
 	rd3_main = gcnew RowDefinition();
 	grd_main->RowDefinitions->Add(rd3_main);
 	
-	men = gcnew Menu_Main();
+	men = gcnew Menu();
 
 	Grid::SetRow(men, 0);
 	grd_main->Children->Add(men);

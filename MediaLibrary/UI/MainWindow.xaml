@@ -1,7 +1,7 @@
 ﻿<Window x:Class="MediaLibrary.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="480" Width="640">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
@@ -29,31 +29,38 @@
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
-                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="150"/>
             </Grid.ColumnDefinitions>
             
             <TextBox Grid.Column="1" Text="Suchen..." TextAlignment="Right" />
         </Grid>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="150"/>
                 <ColumnDefinition />
-                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="150"/>
             </Grid.ColumnDefinitions>
-            <TreeView Grid.Column="0">
-                <TreeViewItem Header="Audio">
-                    <TreeViewItem Header="Musik" />
-                    <TreeViewItem Header="Hörbücher" />
-                </TreeViewItem>
-                <TreeViewItem Header="Video">
-                    <TreeViewItem Header="Filme" />
-                    <TreeViewItem Header="Serien" />
-                </TreeViewItem>
-                <TreeViewItem Header="Programme">
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Medien" Margin="2,0,0,0"/>
+                <TreeView Grid.Row="1">
+                    <TreeViewItem Header="Audio">
+                        <TreeViewItem Header="Musik" />
+                        <TreeViewItem Header="Hörbücher" />
+                    </TreeViewItem>
+                    <TreeViewItem Header="Video">
+                        <TreeViewItem Header="Filme" />
+                        <TreeViewItem Header="Serien" />
+                    </TreeViewItem>
+                    <TreeViewItem Header="Programme">
                         <TreeViewItem Header="Installiert" />
-                        <TreeviewItem Header="Installationsmedien" />
-                </TreeViewItem>
-            </TreeView>
+                        <TreeViewItem Header="Installationsmedien" />
+                    </TreeViewItem>
+                </TreeView>
+            </Grid>
             <ListView Grid.Column="1">
                 <ListView.View>
                     <GridView>
