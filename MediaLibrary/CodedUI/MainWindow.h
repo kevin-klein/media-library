@@ -17,6 +17,10 @@ public:
 	RowDefinition ^rd3_main;
 
 	Menu ^men;
+
+	void InitializeForBrowsing();
+	void InitializeForAudioPlayBack();
+	void InitializeForVideoPlayBack();
 	
 };
 

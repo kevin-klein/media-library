@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Core">
+  <logicalClassDesignerModelMoniker Id="e4ebe007-9f20-44c6-b761-3c140a0c295a" />
+  <nestedChildShapes>
+    <classShape Id="b87c46d5-848a-40e3-b68d-9e86dd1ea01e" absoluteBounds="5.125, 0.5, 1.5, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="3a2daefd-8943-44db-be9c-1b1fca768546" LastKnownName="MediaType" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="9e9f29ff-6842-4cf1-b8ed-64bd43b555aa" absoluteBounds="5.14, 0.89, 1.4700000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="fd1d4060-14cf-4759-926d-5c33adedce5f" absoluteBounds="5.14, 1.421484357615312, 1.4700000000000002, 0.20117186754941951" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84854777-3073-40dd-b2aa-f65b6f0a6276" absoluteBounds="7, 2.125, 1.5, 1.3828124701976772" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="42235f95-11b0-4071-a504-aaa3117f7809" LastKnownName="Audio" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="4ef4cd39-85e2-4fc9-a9ea-da1f6e634981" absoluteBounds="7.015, 2.515, 1.4700000000000002, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="087a10bc-d7dc-4a17-bec3-031772d021a0" absoluteBounds="7.015, 2.8863281125823654, 1.4700000000000002, 0.52148435761531187" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(5.875 : 1.72265622516473); (5.875 : 1.875); (7.75 : 1.875); (7.75 : 2.125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="c2447974-3f7c-42d2-815a-99525b6c895e" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="b87c46d5-848a-40e3-b68d-9e86dd1ea01e" />
+        <classShapeMoniker Id="84854777-3073-40dd-b2aa-f65b6f0a6276" />
+      </nodes>
+    </generalizationConnector>
+    <enumerationShape Id="58cdf7b2-fae1-4928-8b00-60e66deb4ffa" absoluteBounds="8.625, 2.125, 1.5, 1.1716406026482584" hideQualifiedName="false" increaseHeight="0" customColor="161, 150, 103">
+      <enumerationMoniker Id="61a97b28-b131-47cd-8f79-77673e045281" LastKnownName="AudioFormat" />
+      <nestedChildShapes>
+        <LiteralElementListCompartment Id="e5b38594-6fd8-410a-884f-34e84af9f86f" absoluteBounds="8.64, 2.515, 1.4700000000000002, 0.68164060264825821" name="LiteralsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </enumerationShape>
+    <classShape Id="a96fe9c6-075e-4631-b7d5-52fceb877fa8" absoluteBounds="7, 4, 1.5, 1.0624999801317845" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="781ff6ad-835d-450a-b50f-47d01fc1037c" LastKnownName="Music" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="736181b0-32b7-462e-b858-c9f5c3d80eff" absoluteBounds="7.0150000000000006, 4.3900000000000006, 1.4700000000000002, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="5e3af181-0198-4f65-a8ab-8a5b2d527e37" absoluteBounds="7.015, 4.7613281125823654, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(7.75 : 3.50781247019768); (7.75 : 4)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="fdfde164-3e7b-41f7-95f7-7f31b70f1963" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="84854777-3073-40dd-b2aa-f65b6f0a6276" />
+        <classShapeMoniker Id="a96fe9c6-075e-4631-b7d5-52fceb877fa8" />
+      </nodes>
+    </generalizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

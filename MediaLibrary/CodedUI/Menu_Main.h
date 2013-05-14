@@ -7,7 +7,7 @@ ref class Menu_Main : public Menu
 public:
 	Menu_Main(void);
 
-	File_Menu ^men_file;
+	Menu_File ^men_file;
 	MenuItem ^men_edit;
 	MenuItem ^men_help, ^men_showhelp, ^men_about;
 };
