@@ -4,6 +4,7 @@
 Menu_Main::Menu_Main(void)
 {
 
-	men_file = gcnew File_Menu();
+	men_file = gcnew Menu_File();
+	
 }
 
