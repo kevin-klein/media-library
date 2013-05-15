@@ -7,16 +7,11 @@ MainWindow::MainWindow(void)
 	Width=640;
 	Height=480;
 	Title="MediaLibrary";
-
-	InitializeForBrowsing();
-}
-
-void MainWindow::InitializeForBrowsing()
-{
+	
 	grd_main = gcnew Grid();
 
 	rd1_main = gcnew RowDefinition();
-	//rd1_main->Height= gcnew GridLength(20);
+	//rd1_main->Height = gcnew GridLength(20);
 	grd_main->RowDefinitions->Add(rd1_main);
 	rd2_main = gcnew RowDefinition();
 	grd_main->RowDefinitions->Add(rd2_main);
@@ -27,17 +22,7 @@ void MainWindow::InitializeForBrowsing()
 
 	Grid::SetRow(men, 0);
 	grd_main->Children->Add(men);
-
-}
-
-void MainWindow::InitializeForAudioPlayBack()
-{
-	grd_main = gcnew Grid();
-}
-
-void MainWindow::InitializeForVideoPlayBack()
-{
-	grd_main = gcnew Grid();
+	AddChild(grd_main);
 }
 
 
