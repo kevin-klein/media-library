@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e4ebe007-9f20-44c6-b761-3c140a0c295a" name="Core" linkedPackageId="888d0ce2-0196-47ac-a59c-3532b05c7974" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="938c4cba-38a6-4e53-9e05-a7c36b7f0eb3">
+      <profileInstance Id="5f293794-445c-4bfa-8ccb-836aa2d5ca70" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="26d052ff-168d-495a-82cd-e866c1268471">
+      <profileInstance Id="2f511ff9-f7cc-489f-97b2-266a6730614a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3a2daefd-8943-44db-be9c-1b1fca768546" name="MediaType" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8d969362-0de2-4497-8f71-615f5f6728b4" />
+        <generalsInternal>
+          <generalization Id="c2447974-3f7c-42d2-815a-99525b6c895e" isSubstitutable="false">
+            <classMoniker Id="42235f95-11b0-4071-a504-aaa3117f7809" LastKnownName="Audio" />
+            <elementDefinition Id="76da033c-3737-4c80-b802-d469b765c420" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="4dfdd019-0619-482b-a53a-dc7e9bc2bc64" name="PhysicalPath" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3d82f811-a28d-4fdc-b0ac-fea43f2ae733" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e384a432-39b5-4130-bc83-1699c04d8a1f" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="872cfacc-0e78-48a3-9a1e-84fc5aff884b" name="IsManaged" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3a26f182-9c90-4dab-a037-5d80b61a62af" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="032fd186-82d3-43af-ab0e-41890e071a4a" LastKnownName="Bool" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="42235f95-11b0-4071-a504-aaa3117f7809" name="Audio" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9dd77d41-887d-41ab-a5e0-1292b19eab7f" />
+        <generalsInternal>
+          <generalization Id="fdfde164-3e7b-41f7-95f7-7f31b70f1963" isSubstitutable="false">
+            <classMoniker Id="781ff6ad-835d-450a-b50f-47d01fc1037c" LastKnownName="Music" />
+            <elementDefinition Id="5425e762-9367-46d0-851b-db0acdeab70d" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="6b3a699b-8930-4ffc-a431-5f8e41055d8b" name="Bitrate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="b817e147-9447-47b2-a215-9ced4daaf4f8" name="Lower" value="kbit/s">
+                <elementDefinition Id="3b09b345-5372-42a6-baa0-58120effc1a4" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="5c902135-be6f-43ac-a4b5-21520c6b6249" name="Upper" value="kbit/s">
+                <elementDefinition Id="50750a39-a989-4961-9fac-0e01b6fa172d" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="6f199965-67d0-4d3d-b610-59ad52d6def5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3217bbf5-f264-46ef-8930-75597db53065" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="8f196837-a1e9-4f3d-a609-46f217010b18" name="Play" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8d3e1b4e-5db4-42bf-b256-67ae7653ed7a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="67d45c87-68c5-4125-badf-14f172d8624e" direction="Return" isUnique="false">
+                  <elementDefinition Id="6ee5b843-fb5d-45ee-936e-586bfd2c2ca1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f9bf4efb-fe23-4f8e-bf33-141d4ae87f88" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e503132a-85c6-4bba-96fa-c9002af14ffb" name="ConvertTo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cb3f04d6-a58d-4a27-85e8-bcd7d9bcef04" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2bc55864-6703-4fbe-abae-9bafaef0aefc" name="AudioType at" direction="In" isUnique="false">
+                  <elementDefinition Id="edba7edb-3a0f-4c6f-83fb-c9325888e858" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="da662da4-571d-49c1-b7ac-137595c2ec39" name="int bitrate" direction="In" isUnique="false">
+                  <elementDefinition Id="59b90336-ef6a-476e-a2f8-b769c386aeb1" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0d0082c9-246b-4902-a5b9-6ab195883149" direction="Return" isUnique="false">
+                  <elementDefinition Id="ea847f61-e68f-4908-9cc0-2738d3f79ed4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8aa8f56f-f0ff-4b23-8501-db6c7b713914" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="e384a432-39b5-4130-bc83-1699c04d8a1f" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="032fd186-82d3-43af-ab0e-41890e071a4a" name="Bool" isAbstract="false" isLeaf="false" cachedFullName="Bool">
+        <elementDefinition Id="764169ec-01d1-4cdb-9be4-6d2ac845a3ab" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3217bbf5-f264-46ef-8930-75597db53065" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="acb0c9d5-d36a-4dc0-bbaa-6f03a7c0012c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f9bf4efb-fe23-4f8e-bf33-141d4ae87f88" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="eeb66aba-ff9e-472f-87d9-e1f577fc3e37" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="61a97b28-b131-47cd-8f79-77673e045281" name="AudioFormat" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="41f4f78a-e4c1-4c27-9608-cc9dfe962fa4" />
+        <ownedLiterals>
+          <enumerationLiteral Id="771bf5a8-d2b3-4bbd-9b1b-796c28bcf1bf" name="MP3">
+            <elementDefinition Id="18871921-6791-4f25-af01-a8d0d56cf538" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="79730043-4b0b-4e1e-8df3-2646263a07e0" name="FLAC">
+            <elementDefinition Id="682b1e3e-87fe-4f14-8c5d-41af86e67d93" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="f137cd6b-1c93-40e0-b72a-05cbf360e5f9" name="WMA">
+            <elementDefinition Id="d6f0c372-fff5-4bdc-8d9f-26c8f4e7e275" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="8aa8f56f-f0ff-4b23-8501-db6c7b713914" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="791e9e3b-a8ca-4c30-a5ba-8835b18d07f3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="781ff6ad-835d-450a-b50f-47d01fc1037c" name="Music" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="85da27df-52f9-4cf2-bb25-5bc54c55879b" />
+        <ownedAttributesInternal>
+          <property Id="892dcdd1-540e-432b-a52e-a939b35ec6f0" name="Genre" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4bd2deb8-8f4e-44e7-8af5-b8c5b5d97d11" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e384a432-39b5-4130-bc83-1699c04d8a1f" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="888d0ce2-0196-47ac-a59c-3532b05c7974" name="Models">
+    <elementDefinition Id="74710447-e23d-4d8b-b9ce-dfaeaf5b6f47" />
+  </package>
+</logicalClassDesignerModel>
