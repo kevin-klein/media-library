@@ -1,26 +1,33 @@
 #pragma once
 #include "using.h"
-#include "Menu_Main.h"
+#include "Menu.h"
+
+ref class Grid_Main : public Grid
+{
+public:
+	Menu_Main ^men_main;
+
+	Grid_Main()
+	{
+		men_main = gcnew Menu_Main();
+		SetRow(men_main, 0);
+		Children->Add(men_main);
+	}
+};
 
 ref class MainWindow : public Window
 {
 public:
-	MainWindow(void);
+	Grid_Main ^grd_main;
 
-	GridLength ^gl_t;
-	//GridLengthConverter ^glc;
-	
-	Grid ^grd_main;
+	MainWindow(void)
+	{
+		Width=640;
+		Height=480;
+		Title="MediaLibrary";
 
-	RowDefinition ^rd1_main;
-	RowDefinition ^rd2_main;
-	RowDefinition ^rd3_main;
-
-	Menu ^men;
-
-	void InitializeForBrowsing();
-	void InitializeForAudioPlayBack();
-	void InitializeForVideoPlayBack();
-	
+		grd_main = gcnew Grid_Main();
+		AddChild(grd_main);
+	}
 };
 
