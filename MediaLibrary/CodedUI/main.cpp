@@ -5,9 +5,7 @@
 [STAThreadAttribute()]
 int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hprevInst, LPSTR lpCmd, int nCMD)
 {
-	MainWindow ^wnd = gcnew MainWindow();
-	wnd->Title = "MediaLibrary";
-	App ^app = gcnew App();
-	app->Run(wnd);
+	auto app = gcnew App(); 
+	app->Run(gcnew MainWindow());
 }
 
