@@ -7,17 +7,18 @@
       <Entity type="Class">
         <Name>MediaType</Name>
         <Access>Public</Access>
-        <Location left="224" top="10" />
-        <Size width="162" height="94" />
+        <Location left="224" top="35" />
+        <Size width="162" height="111" />
         <Collapsed>False</Collapsed>
+        <Member type="Field">public int ID</Member>
         <Member type="Constructor">protected MediaType()</Member>
         <Modifier>Abstract</Modifier>
       </Entity>
       <Entity type="Class">
         <Name>Audio</Name>
         <Access>Public</Access>
-        <Location left="224" top="158" />
-        <Size width="162" height="111" />
+        <Location left="122" top="221" />
+        <Size width="162" height="128" />
         <Collapsed>False</Collapsed>
         <Member type="Constructor">public Audio()</Member>
         <Member type="Method">public void Play()</Member>
@@ -26,7 +27,7 @@
       <Entity type="Class">
         <Name>Video</Name>
         <Access>Public</Access>
-        <Location left="416" top="158" />
+        <Location left="318" top="221" />
         <Size width="162" height="97" />
         <Collapsed>False</Collapsed>
         <Member type="Constructor">public Video()</Member>
