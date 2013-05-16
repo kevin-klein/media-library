@@ -1,12 +1,19 @@
 #include "using.h"
 #include "MainWindow.h"
 
+Grid_Search::Grid_Search()
+{
+}
 
-Grid_Main::Grid_Main()
+MainWindow::Grid_Main::Grid_Main()
 {
 	men_main = gcnew Menu_Main();
 	SetRow(men_main, 0);
 	Children->Add(men_main);
+
+	rd_main_1 = gcnew RowDefinition();
+	rd_main_2 = gcnew RowDefinition();
+	rd_main_3 = gcnew RowDefinition();
 }
 
 

@@ -27,7 +27,7 @@
     <ClInclude Include="using.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="Menu\Menu.h">
+    <ClInclude Include="Menu.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
@@ -36,6 +36,9 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="MainWindow.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

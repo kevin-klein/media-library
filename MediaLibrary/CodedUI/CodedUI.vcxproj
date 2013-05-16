@@ -73,13 +73,14 @@
   <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="MainWindow.h" />
-    <ClInclude Include="Menu\Menu.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="using.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="Menu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="CodedUI.rc" />

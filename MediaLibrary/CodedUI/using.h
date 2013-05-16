@@ -1,5 +1,5 @@
 #pragma once
 
 using namespace System;
-	using namespace Windows;
-		using namespace Controls;
+using namespace System::Windows;
+using namespace System::Windows::Controls;
