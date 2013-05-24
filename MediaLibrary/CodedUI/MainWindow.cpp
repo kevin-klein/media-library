@@ -11,7 +11,9 @@ MainWindow::Grid_Main::Grid_Main()
 	SetRow(men_main, 0);
 	Children->Add(men_main);
 
-	rd_main_1 = gcnew RowDefinition();
+	rd_main_1 = gcnew RowDefinition;
+	rd_main_1->Height = gcnew GridLength(20);
+	RowDefinitions->Add(rd_main_1);
 	rd_main_2 = gcnew RowDefinition();
 	rd_main_3 = gcnew RowDefinition();
 }

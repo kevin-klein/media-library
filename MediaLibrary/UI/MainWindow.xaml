@@ -5,7 +5,6 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
-            <RowDefinition Height="20"/>
             <RowDefinition Height="*"/>            
         </Grid.RowDefinitions>
             <Menu Grid.Row="0">
@@ -28,48 +27,63 @@
             </Menu>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition Width="150"/>
-            </Grid.ColumnDefinitions>
-            
-            <TextBox Grid.Column="1" Text="Suchen..." TextAlignment="Right" />
-        </Grid>
-        <Grid Grid.Row="2">
-            <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150"/>
                 <ColumnDefinition />
-                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="181"/>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20" />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <TextBlock Grid.Row="0" Text="Medien" Margin="2,0,0,0"/>
-                <TreeView Grid.Row="1">
-                    <TreeViewItem Header="Audio">
-                        <TreeViewItem Header="Musik" />
-                        <TreeViewItem Header="Hörbücher" />
-                    </TreeViewItem>
-                    <TreeViewItem Header="Video">
-                        <TreeViewItem Header="Filme" />
-                        <TreeViewItem Header="Serien" />
-                    </TreeViewItem>
-                    <TreeViewItem Header="Programme">
-                        <TreeViewItem Header="Installiert" />
-                        <TreeViewItem Header="Installationsmedien" />
-                    </TreeViewItem>
-                </TreeView>
             </Grid>
-            <ListView Grid.Column="1">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn Header="GridViewColumn" Width="120" />
-                    </GridView>
-                </ListView.View>
-                <ListViewItem>ListViewItem</ListViewItem>
-            </ListView>
-        </Grid>
-        
+            <TextBlock Grid.Row="0" Text="Medien" TextAlignment="Center"/>
+            <TreeView Grid.Row="1">
+                <TreeViewItem Header="Audio">
+                    <TreeViewItem Header="Musik" />
+                    <TreeViewItem Header="Hörbücher" />
+                </TreeViewItem>
+                <TreeViewItem Header="Video">
+                    <TreeViewItem Header="Filme" />
+                    <TreeViewItem Header="Serien" />
+                </TreeViewItem>
+                <TreeViewItem Header="Programme">
+                    <TreeViewItem Header="Installiert" />
+                    <TreeViewItem Header="Installationsmedien" />
+                </TreeViewItem>
+            </TreeView>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="22" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Content="Filter hinzufügen..." HorizontalContentAlignment="Right" Padding="0,0,10,0"/>
+                <ListView Grid.Row="1">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="GridViewColumn" Width="120" />
+                        </GridView>
+                    </ListView.View>
+                    <ListViewItem>ListViewItem</ListViewItem>
+                </ListView>
+            </Grid>             
+            <TabControl Grid.Column="2">
+                <TabItem Header="Wiedergabe">
+                    <TabItem.Content>
+                        Wiedergabe
+                    </TabItem.Content>
+                </TabItem>
+                <TabItem Header="Import">
+                    <TabItem.Content>
+                        Import
+                    </TabItem.Content>
+                </TabItem>
+                <TabItem Header="Export">
+                    <TabItem.Content>
+                        Export
+                    </TabItem.Content>
+                </TabItem>
+            </TabControl>
+        </Grid> 
     </Grid>
 </Window>
