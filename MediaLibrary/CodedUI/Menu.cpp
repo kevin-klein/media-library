@@ -32,6 +32,10 @@ Menu_Main::Menu_Main()
 	men_file->Header="_Datei";
 	AddChild(men_file);
 
-	
+
+	men_file->Click += gcnew OnClick(&men_exit_OnClick);
 }
 
+void Menu_Main::men_exit_OnClick(Object^ sender, RoutedEventArgs ^e)
+{
+}

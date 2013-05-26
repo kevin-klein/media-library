@@ -18,6 +18,8 @@ public:
 	MenuItem ^men_edit;
 	MenuItem ^men_help, ^men_showhelp, ^men_about;
 
-	delegate void e();
+	static void men_exit_OnClick(Object^, RoutedEventArgs^);
+
+	delegate void OnClick(Object^, RoutedEventArgs^);
 
 };
