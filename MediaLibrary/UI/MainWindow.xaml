@@ -54,16 +54,19 @@
             </TreeView>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="22" />
+                    <RowDefinition Height="27" />
                     <RowDefinition />
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="3*"/>
-                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="120"/>
                     </Grid.ColumnDefinitions>
-                    <TextBox Grid.Column="0" Text="Suchen..." />
-                    <Button Grid.Column="1" Content="Filter hinzufügen..." HorizontalContentAlignment="Right" Padding="0,0,10,0"/>
+                    <TextBox Grid.Column="3" Text="Suchen..." VerticalAlignment="Center" Margin="5,0"/>
+                    <Button Grid.Column="1" Content="Filtern" VerticalAlignment="Center" Margin="5,0"/>
+                    <Button Grid.Column="0" Content="Sortieren" VerticalAlignment="Center" Margin="5,0"/>
                 </Grid>
                 
                 <ListView Grid.Row="1">
@@ -78,7 +81,13 @@
             <TabControl Grid.Column="2">
                 <TabItem Header="Wiedergabe">
                     <TabItem.Content>
-                        Wiedergabe
+                        <ListView>
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Wiedergabe" Width="163"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
                     </TabItem.Content>
                 </TabItem>
                 <TabItem Header="Import">

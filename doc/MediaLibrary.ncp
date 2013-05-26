@@ -7,7 +7,7 @@
       <Entity type="Class">
         <Name>MediaType</Name>
         <Access>Public</Access>
-        <Location left="224" top="35" />
+        <Location left="441" top="38" />
         <Size width="162" height="111" />
         <Collapsed>False</Collapsed>
         <Member type="Field">public int ID</Member>
@@ -17,9 +17,10 @@
       <Entity type="Class">
         <Name>Audio</Name>
         <Access>Public</Access>
-        <Location left="122" top="221" />
+        <Location left="124" top="221" />
         <Size width="162" height="128" />
         <Collapsed>False</Collapsed>
+        <Member type="Field">public AudioFormat format</Member>
         <Member type="Constructor">public Audio()</Member>
         <Member type="Method">public void Play()</Member>
         <Modifier>None</Modifier>
@@ -27,11 +28,64 @@
       <Entity type="Class">
         <Name>Video</Name>
         <Access>Public</Access>
-        <Location left="318" top="221" />
+        <Location left="768" top="221" />
         <Size width="162" height="97" />
         <Collapsed>False</Collapsed>
         <Member type="Constructor">public Video()</Member>
         <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Enum">
+        <Name>AudioFormat</Name>
+        <Access>Public</Access>
+        <Location left="340" top="221" />
+        <Size width="162" height="129" />
+        <Collapsed>False</Collapsed>
+        <Value>MP3</Value>
+        <Value>WMA</Value>
+        <Value>FLAC</Value>
+        <Value>WAV</Value>
+      </Entity>
+      <Entity type="Class">
+        <Name>Music</Name>
+        <Access>Public</Access>
+        <Location left="25" top="401" />
+        <Size width="162" height="136" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Audiobook</Name>
+        <Access>Public</Access>
+        <Location left="219" top="401" />
+        <Size width="162" height="136" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Movie</Name>
+        <Access>Public</Access>
+        <Location left="679" top="401" />
+        <Size width="162" height="136" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Series</Name>
+        <Access>Public</Access>
+        <Location left="870" top="401" />
+        <Size width="162" height="136" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Enum">
+        <Name>VideoFormat</Name>
+        <Access>Public</Access>
+        <Location left="543" top="221" />
+        <Size width="162" height="112" />
+        <Collapsed>False</Collapsed>
+        <Value>AVI</Value>
+        <Value>FLV</Value>
+        <Value>MKV</Value>
       </Entity>
     </Entities>
     <Relationships>
@@ -42,6 +96,38 @@
       <Relationship type="Generalization" first="2" second="0">
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="1" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Generalization" first="6" second="2">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="7" second="2">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="5" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="4" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="2" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
       </Relationship>
     </Relationships>
   </ProjectItem>

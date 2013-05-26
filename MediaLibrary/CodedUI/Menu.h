@@ -18,4 +18,6 @@ public:
 	MenuItem ^men_edit;
 	MenuItem ^men_help, ^men_showhelp, ^men_about;
 
+	delegate void e();
+
 };

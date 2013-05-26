@@ -24,9 +24,8 @@ public:
 	{
 	public:
 		Grid_Main();
-
 		RowDefinition ^rd_main_1, ^rd_main_2, ^rd_main_3;
-		GridLength ^gl_rd_main_1;
+
 		Menu_Main ^men_main;
 		Grid_Body ^grid_body;
 	};

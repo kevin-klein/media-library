@@ -1,5 +1,5 @@
 #include "Menu.h"
-
+#include "Program.h"
 
 Menu_Main::Menu_File::Menu_File()
 {
@@ -18,12 +18,20 @@ Menu_Main::Menu_File::Menu_File()
 	AddChild(men_saveas);
 	AddChild(gcnew Separator());
 	men_exit = gcnew MenuItem();
+	men_exit->Header="Beenden";
 	AddChild(men_exit);
+
+	
 }
+
+
 
 Menu_Main::Menu_Main()
 {
 	men_file = gcnew Menu_File();
 	men_file->Header="_Datei";
 	AddChild(men_file);
+
+	
 }
+

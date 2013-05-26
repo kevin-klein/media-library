@@ -21,9 +21,6 @@
     <ClInclude Include="App.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="using.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
@@ -31,6 +28,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="Tree_Media.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Program.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
@@ -47,10 +47,11 @@
     <ClCompile Include="Tree_Media.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="CodedUI.rc">
-      <Filter>Ressourcendateien</Filter>
-    </ResourceCompile>
+    <ClCompile Include="Menu_Events.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
