@@ -1,7 +1,7 @@
 <Project>
   <Name>MediaLibrary</Name>
   <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
-    <Name>Media</Name>
+    <Name>MediaFramework</Name>
     <Language>CSharp</Language>
     <Entities>
       <Entity type="Class">
@@ -17,7 +17,7 @@
       <Entity type="Class">
         <Name>Audio</Name>
         <Access>Public</Access>
-        <Location left="124" top="221" />
+        <Location left="241" top="221" />
         <Size width="162" height="128" />
         <Collapsed>False</Collapsed>
         <Member type="Field">public AudioFormat format</Member>
@@ -28,7 +28,7 @@
       <Entity type="Class">
         <Name>Video</Name>
         <Access>Public</Access>
-        <Location left="768" top="221" />
+        <Location left="643" top="221" />
         <Size width="162" height="97" />
         <Collapsed>False</Collapsed>
         <Member type="Constructor">public Video()</Member>
@@ -37,9 +37,9 @@
       <Entity type="Enum">
         <Name>AudioFormat</Name>
         <Access>Public</Access>
-        <Location left="340" top="221" />
+        <Location left="241" top="105" />
         <Size width="162" height="129" />
-        <Collapsed>False</Collapsed>
+        <Collapsed>True</Collapsed>
         <Value>MP3</Value>
         <Value>WMA</Value>
         <Value>FLAC</Value>
@@ -48,7 +48,7 @@
       <Entity type="Class">
         <Name>Music</Name>
         <Access>Public</Access>
-        <Location left="25" top="401" />
+        <Location left="144" top="401" />
         <Size width="162" height="136" />
         <Collapsed>False</Collapsed>
         <Modifier>None</Modifier>
@@ -56,7 +56,7 @@
       <Entity type="Class">
         <Name>Audiobook</Name>
         <Access>Public</Access>
-        <Location left="219" top="401" />
+        <Location left="340" top="401" />
         <Size width="162" height="136" />
         <Collapsed>False</Collapsed>
         <Modifier>None</Modifier>
@@ -64,7 +64,7 @@
       <Entity type="Class">
         <Name>Movie</Name>
         <Access>Public</Access>
-        <Location left="679" top="401" />
+        <Location left="552" top="401" />
         <Size width="162" height="136" />
         <Collapsed>False</Collapsed>
         <Modifier>None</Modifier>
@@ -72,7 +72,7 @@
       <Entity type="Class">
         <Name>Series</Name>
         <Access>Public</Access>
-        <Location left="870" top="401" />
+        <Location left="747" top="401" />
         <Size width="162" height="136" />
         <Collapsed>False</Collapsed>
         <Modifier>None</Modifier>
@@ -80,9 +80,9 @@
       <Entity type="Enum">
         <Name>VideoFormat</Name>
         <Access>Public</Access>
-        <Location left="543" top="221" />
+        <Location left="643" top="105" />
         <Size width="162" height="112" />
-        <Collapsed>False</Collapsed>
+        <Collapsed>True</Collapsed>
         <Value>AVI</Value>
         <Value>FLV</Value>
         <Value>MKV</Value>
@@ -96,14 +96,6 @@
       <Relationship type="Generalization" first="2" second="0">
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
-      </Relationship>
-      <Relationship type="Association" first="1" second="3">
-        <Label>
-        </Label>
-        <StartOrientation>Horizontal</StartOrientation>
-        <EndOrientation>Horizontal</EndOrientation>
-        <Direction>Unidirectional</Direction>
-        <AssociationType>Association</AssociationType>
       </Relationship>
       <Relationship type="Generalization" first="6" second="2">
         <StartOrientation>Vertical</StartOrientation>
@@ -121,13 +113,102 @@
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
+      <Relationship type="Association" first="1" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
       <Relationship type="Association" first="2" second="8">
         <Label>
         </Label>
-        <StartOrientation>Horizontal</StartOrientation>
-        <EndOrientation>Horizontal</EndOrientation>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
         <Direction>Unidirectional</Direction>
         <AssociationType>Association</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>UI</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>MainWindow</Name>
+        <Access>Public</Access>
+        <Location left="305" top="35" />
+        <Size width="162" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public Grid_Main grid_main</Member>
+        <Member type="Constructor">public MainWindow()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Grid_Main</Name>
+        <Access>Public</Access>
+        <Location left="305" top="201" />
+        <Size width="162" height="179" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public RowDefinition rd_main_1</Member>
+        <Member type="Field">public RowDefinition rd_main_2</Member>
+        <Member type="Field">public RowDefinition rd_main_3</Member>
+        <Member type="Field">public Menu_Main men_main</Member>
+        <Member type="Field">public Grid_Body grid_body</Member>
+        <Member type="Constructor">public Grid_Main()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Grid_Body</Name>
+        <Access>Public</Access>
+        <Location left="396" top="456" />
+        <Size width="162" height="163" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public ColumnDefinition cd_body_1</Member>
+        <Member type="Field">public ColumnDefinition cd_body_2</Member>
+        <Member type="Field">public ColumnDefinition cd_body_3</Member>
+        <Member type="Field">public Tree_Media tree_med</Member>
+        <Member type="Constructor">public Grid_Body()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Menu_Main</Name>
+        <Access>Public</Access>
+        <Location left="208" top="456" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public Menu_File men_file</Member>
+        <Member type="Field">MenuItem men_edit</Member>
+        <Member type="Field">int newField</Member>
+        <Member type="Constructor">public Menu_Main()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="1" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="3" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
       </Relationship>
     </Relationships>
   </ProjectItem>

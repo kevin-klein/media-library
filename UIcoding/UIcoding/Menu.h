@@ -20,6 +20,8 @@ public:
 
 	static void men_exit_OnClick(Object^, RoutedEventArgs^);
 
+	RoutedEventHandler ^men_exit_Click;
+
 	delegate void OnClick(Object^, RoutedEventArgs^);
 
 };
