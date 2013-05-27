@@ -1,6 +1,13 @@
 #pragma once
 #include "using.h"
 
+/*
+Files regarding the Menu class are:
+Menu.h          - Declarations
+Menu.cpp        - Constructors
+Menu_Events.cpp - Event handling functions
+*/
+
 ref class Menu_Main : public Menu
 {
 public:
@@ -18,10 +25,5 @@ public:
 	MenuItem ^men_edit;
 	MenuItem ^men_help, ^men_showhelp, ^men_about;
 
-	static void men_exit_OnClick(Object^, RoutedEventArgs^);
-
-	RoutedEventHandler ^men_exit_Click;
-
-	delegate void OnClick(Object^, RoutedEventArgs^);
-
+	static void men_exit_Click(Object^, RoutedEventArgs^);
 };

@@ -1,5 +1,4 @@
 #include "Menu.h"
-#include "Program.h"
 
 Menu_Main::Menu_File::Menu_File()
 {
@@ -33,10 +32,6 @@ Menu_Main::Menu_Main()
 	AddChild(men_file);
 
 
-	men_file->Click += gcnew RoutedEventHandler(&men_exit_OnClick);
+	men_file->Click += gcnew RoutedEventHandler(&men_exit_Click);
 }
 
-void Menu_Main::men_exit_OnClick(Object^ sender, RoutedEventArgs ^e)
-{
-	Program::Exit();
-}

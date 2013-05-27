@@ -8,8 +8,3 @@ Program::Program(void)
 	wnd->Title="MediaLibrary";
 	app->Run(wnd);
 }
-
-void Program::Exit(void)
-{
-	app->Shutdown(0);
-}

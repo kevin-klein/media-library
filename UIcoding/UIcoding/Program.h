@@ -8,7 +8,5 @@ public:
 
 	static Application ^app;
 	static MainWindow ^wnd;
-
-	static void Exit();
 };
 

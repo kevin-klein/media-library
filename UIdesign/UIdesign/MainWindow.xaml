@@ -5,6 +5,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
+            <RowDefinition Height="20" />
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Menu Grid.Row="0">
@@ -25,58 +26,55 @@
                 <MenuItem Header="Über..." />
             </MenuItem>
         </Menu>
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="150"/>
                 <ColumnDefinition />
                 <ColumnDefinition Width="181"/>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="20" />
-                    <RowDefinition />
-                </Grid.RowDefinitions>
-            </Grid>
-            <TextBlock Grid.Row="0" Text="Medien" TextAlignment="Center"/>
-            <TreeView Grid.Row="1">
-                <TreeViewItem Header="Audio">
-                    <TreeViewItem Header="Musik" />
-                    <TreeViewItem Header="Hörbücher" />
-                </TreeViewItem>
-                <TreeViewItem Header="Video">
-                    <TreeViewItem Header="Filme" />
-                    <TreeViewItem Header="Serien" />
-                </TreeViewItem>
-                <TreeViewItem Header="Programme">
-                    <TreeViewItem Header="Installiert" />
-                    <TreeViewItem Header="Installationsmedien" />
-                </TreeViewItem>
-            </TreeView>
-            <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="27" />
                     <RowDefinition />
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="70"/>
-                        <ColumnDefinition Width="70"/>
                         <ColumnDefinition />
-                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="2*"/>
                     </Grid.ColumnDefinitions>
                     <TextBox Grid.Column="3" Text="Suchen..." VerticalAlignment="Center" Margin="5,0"/>
                     <Button Grid.Column="1" Content="Filtern" VerticalAlignment="Center" Margin="5,0"/>
                     <Button Grid.Column="0" Content="Sortieren" VerticalAlignment="Center" Margin="5,0"/>
                 </Grid>
-
-                <ListView Grid.Row="1">
-                    <ListView.View>
-                        <GridView>
-                            <GridViewColumn Header="GridViewColumn" Width="120" />
-                        </GridView>
-                    </ListView.View>
-                    <ListViewItem>ListViewItem</ListViewItem>
-                </ListView>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <TreeView Grid.Column="0">
+                        <TreeViewItem Header="Audio">
+                            <TreeViewItem Header="Musik" />
+                            <TreeViewItem Header="Hörbücher" />
+                        </TreeViewItem>
+                        <TreeViewItem Header="Video">
+                            <TreeViewItem Header="Filme" />
+                            <TreeViewItem Header="Serien" />
+                        </TreeViewItem>
+                        <TreeViewItem Header="Programme">
+                            <TreeViewItem Header="Installiert" />
+                            <TreeViewItem Header="Installationsmedien" />
+                        </TreeViewItem>
+                    </TreeView>
+                    <ListView Grid.Column="1">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="GridViewColumn" Width="120" />
+                            </GridView>
+                        </ListView.View>
+                        <ListViewItem>ListViewItem</ListViewItem>
+                    </ListView>
+                </Grid>
             </Grid>
             <TabControl Grid.Column="2">
                 <TabItem Header="Wiedergabe">
