@@ -6,7 +6,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
             <RowDefinition Height="20" />
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Menu Grid.Row="0">
             <MenuItem Header="_Datei">
@@ -39,13 +39,10 @@
                 <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
                         <ColumnDefinition Width="2*"/>
                     </Grid.ColumnDefinitions>
-                    <TextBox Grid.Column="3" Text="Suchen..." VerticalAlignment="Center" Margin="5,0"/>
-                    <Button Grid.Column="1" Content="Filtern" VerticalAlignment="Center" Margin="5,0"/>
-                    <Button Grid.Column="0" Content="Sortieren" VerticalAlignment="Center" Margin="5,0"/>
+                    <Button Grid.Column="0" Content="Filtern" VerticalAlignment="Center" Margin="5,0"/>
+                    <TextBox Grid.Column="1" Text="Suchen..." VerticalAlignment="Center" Margin="5,0"/>
                 </Grid>
                 <Grid Grid.Row="1">
                     <Grid.ColumnDefinitions>
