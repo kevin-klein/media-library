@@ -4,6 +4,12 @@
 [STAThreadAttribute()]
 int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hprevInst, LPSTR lpCmd, int nCMD)
 {
-	Program ^prog = gcnew Program();
+	try
+	{
+		Program ^prog = gcnew Program();
+	}
+	catch(Exception ^e)
+	{
+		MessageBox::Show(e->GetType+": \n"+e->Message);
+	}
 }
-

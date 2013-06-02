@@ -18,6 +18,7 @@ MainWindow::Grid_Main::Grid_Body::Grid_Content::Grid_Content(void)
 	lv_res = gcnew List_Results(gcnew List<List<String^>^>());
 	SetRow(lv_res, 1);
 	Children->Add(lv_res);
+	
 
 }
 
