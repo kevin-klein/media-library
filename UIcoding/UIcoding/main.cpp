@@ -10,6 +10,6 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hprevInst, LPSTR lpCmd, int nCMD)
 	}
 	catch(Exception ^e)
 	{
-		MessageBox::Show(e->GetType+": \n"+e->Message);
+		MessageBox::Show(e->GetType()+": \n"+e->Message);
 	}
 }
