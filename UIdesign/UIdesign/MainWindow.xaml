@@ -28,51 +28,39 @@
         </Menu>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="181" />
                 <ColumnDefinition />
                 <ColumnDefinition Width="181"/>
             </Grid.ColumnDefinitions>
-            <Grid Grid.Column="0">
+            <TreeView Grid.Column="0">
+                <TreeViewItem Header="Audio">
+                    <TreeViewItem Header="Musik" />
+                    <TreeViewItem Header="Hörbücher" />
+                </TreeViewItem>
+                <TreeViewItem Header="Video">
+                    <TreeViewItem Header="Filme" />
+                    <TreeViewItem Header="Serien" />
+                </TreeViewItem>
+                <TreeViewItem Header="Programme">
+                    <TreeViewItem Header="Installiert" />
+                    <TreeViewItem Header="Installationsmedien" />
+                </TreeViewItem>
+            </TreeView>
+            <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="27" />
+                    <RowDefinition Height="27"/>
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Grid Grid.Row="0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                        <ColumnDefinition Width="2*"/>
-                    </Grid.ColumnDefinitions>
-                    <Button Grid.Column="0" Content="Filtern" VerticalAlignment="Center" Margin="5,0"/>
-                    <TextBox Grid.Column="1" Text="Suchen..." VerticalAlignment="Center" Margin="5,0"/>
-                </Grid>
-                <Grid Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="150"/>
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-                    <TreeView Grid.Column="0">
-                        <TreeViewItem Header="Audio">
-                            <TreeViewItem Header="Musik" />
-                            <TreeViewItem Header="Hörbücher" />
-                        </TreeViewItem>
-                        <TreeViewItem Header="Video">
-                            <TreeViewItem Header="Filme" />
-                            <TreeViewItem Header="Serien" />
-                        </TreeViewItem>
-                        <TreeViewItem Header="Programme">
-                            <TreeViewItem Header="Installiert" />
-                            <TreeViewItem Header="Installationsmedien" />
-                        </TreeViewItem>
-                    </TreeView>
-                    <ListView Grid.Column="1">
-                        <ListView.View>
-                            <GridView>
-                                <GridViewColumn Header="GridViewColumn" Width="120" />
-                            </GridView>
-                        </ListView.View>
-                        <ListViewItem>ListViewItem</ListViewItem>
-                    </ListView>
-                </Grid>
-            </Grid>
+                <TextBox Grid.Row="0" Text="Suchen..." VerticalAlignment="Center" Margin="5,0"/>
+                <ListView Grid.Row="1">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="GridViewColumn" Width="120" />
+                        </GridView>
+                    </ListView.View>
+                    <ListViewItem>ListViewItem</ListViewItem>
+                </ListView>
+            </Grid>        
             <TabControl Grid.Column="2">
                 <TabItem Header="Wiedergabe">
                     <TabItem.Content>
@@ -95,7 +83,9 @@
                         Export
                     </TabItem.Content>
                 </TabItem>
-            </TabControl>
+            </TabControl>    
+            </Grid>
+            
         </Grid>
-    </Grid>
+
 </Window>

@@ -69,6 +69,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="List_Results.h" />
     <ClInclude Include="MainWindow.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Program.h" />
@@ -76,6 +77,7 @@
     <ClInclude Include="using.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="List_Results.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="Menu.cpp" />
