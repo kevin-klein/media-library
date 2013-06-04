@@ -18,6 +18,7 @@ Menu_Main::Menu_File::Menu_File()
 	AddChild(gcnew Separator());
 	men_exit = gcnew MenuItem();
 	men_exit->Header="Beenden";
+	men_exit->Click += gcnew RoutedEventHandler(&men_exit_Click);
 	AddChild(men_exit);
 
 	
@@ -32,6 +33,6 @@ Menu_Main::Menu_Main()
 	AddChild(men_file);
 
 
-	men_file->Click += gcnew RoutedEventHandler(&men_exit_Click);
+	
 }
 

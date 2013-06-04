@@ -33,6 +33,9 @@
     <ClInclude Include="List_Results.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="Tab_Media.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -54,6 +57,9 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="List_Results.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Tab_Media.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

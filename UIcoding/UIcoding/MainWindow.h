@@ -3,6 +3,7 @@
 #include "Menu.h"
 #include "Tree_Media.h"
 #include "List_Results.h"
+#include "Tab_Media.h"
 
 ref class MainWindow : public Window
 {
@@ -22,6 +23,7 @@ public:
 			Grid_Body();
 			ColumnDefinition ^cd_body_0, ^cd_body_1, ^cd_body_2;
 			Tree_Media ^tree_med;
+			Tab_Media ^tab_med;
 
 			ref class Grid_Content : public Grid
 			{
@@ -31,6 +33,9 @@ public:
 				TextBox ^txtbox_search;
 				List_Results ^lv_res;
 			};
+
+
+
 			Grid_Content ^grd_con;
 		};
 		Grid_Body ^grd_body;
