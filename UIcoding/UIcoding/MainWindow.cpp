@@ -70,7 +70,10 @@ MainWindow::Grid_Main::Grid_Body::Grid_Content::Grid_Content(void)
 	SetRow(txtbox_search, 0);
 	Children->Add(txtbox_search);
 
-	lv_res = gcnew List_Results(gcnew List<List<String^>^>());
+	List<String^>^ cols = gcnew List<String^>;
+	cols->Add("col1");
+
+	lv_res = gcnew List_Results(cols, gcnew List<List<String^>^>());
 	SetRow(lv_res, 1);
 	Children->Add(lv_res);
 }

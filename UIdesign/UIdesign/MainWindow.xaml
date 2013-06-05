@@ -70,6 +70,7 @@
                                     <GridViewColumn Header="Wiedergabe" Width="163"/>
                                 </GridView>
                             </ListView.View>
+                            
                         </ListView>
                     </TabItem.Content>
                 </TabItem>

@@ -7,7 +7,7 @@ namespace MediaFramework {
 
 	public enum class AudioCodec
 	{
-
+		MP3
 	};
 
 	public enum class VideoCodec
