@@ -58,7 +58,7 @@
                             <GridViewColumn Header="GridViewColumn" Width="120" />
                         </GridView>
                     </ListView.View>
-                    <ListViewItem>ListViewItem</ListViewItem>
+                    <ListViewItem Content="ListViewItem" Margin="0"/>
                 </ListView>
             </Grid>        
             <TabControl Grid.Column="2">

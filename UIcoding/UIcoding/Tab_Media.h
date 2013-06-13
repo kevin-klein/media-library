@@ -16,6 +16,14 @@ public:
 	{
 	public:
 		Tab_Import();
+
+		ref class Tree_Import : public TreeView
+		{
+		public:
+			Tree_Import();
+
+
+		};
 	};
 
 	ref class Tab_Export : public TabItem
@@ -24,8 +32,11 @@ public:
 		Tab_Export();
 	};
 
+protected:
 	Tab_Play ^tab_play;
 	Tab_Import ^tab_import;
 	Tab_Export ^tab_export;
+
+	List<String^>^ drives;
 };
 
